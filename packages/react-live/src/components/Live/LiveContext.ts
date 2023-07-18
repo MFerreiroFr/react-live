@@ -9,7 +9,7 @@ type ContextValue = {
   language: string;
   theme?: typeof themes.nightOwl;
   onError(error: Error): void;
-  onChange(value: string): void;
+  onChange(value: string | undefined): void;
 };
 
 const LiveContext = createContext<ContextValue>({} as ContextValue);

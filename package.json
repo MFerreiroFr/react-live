@@ -17,6 +17,9 @@
     "version": "pnpm changeset version && pnpm install --no-frozen-lockfile"
   },
   "dependencies": {
+    "@monaco-editor/react": "^4.5.1",
+    "monaco-editor": "^0.40.0",
+    "pnpm": "^8.6.7",
     "prism-react-renderer": "2.0.5"
   },
   "devDependencies": {
