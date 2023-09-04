@@ -4,10 +4,9 @@ export interface CodeEditorProps {
   initialValue: string;
   onChange: (value: string | undefined) => void;
 }
-const CodeEditor = ({ initialValue, onChange }: CodeEditorProps) => {
+const CodeEditor = ({ initialValue, onChange, ...props }: CodeEditorProps) => {
   return (
     <div>
-      <div>HOLA</div>
       <Editor
         defaultLanguage="javascript"
         defaultValue={initialValue}
@@ -22,6 +21,7 @@ const CodeEditor = ({ initialValue, onChange }: CodeEditorProps) => {
           scrollBeyondLastLine: false,
           automaticLayout: true,
         }}
+        {...props}
       />
     </div>
   );
